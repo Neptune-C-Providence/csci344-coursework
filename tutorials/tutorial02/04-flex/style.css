@@ -1,0 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home {
+    background-color: azure;
+}
+
+#bio {
+    background-color: dodgerblue;
+}
+
+#portfolio {
+    background-color: turquoise;
+}
+
+#contact {
+    background-color: mediumaquamarine;
+}
