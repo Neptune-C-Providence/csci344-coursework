@@ -1,0 +1,88 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #F4F4F4;
+}
+
+/* Begin Debugging Code */
+/*
+header,
+main,
+main section,
+nav,
+.logo {
+    border: solid 2px #CCC;
+    padding: 10px;
+    margin: 10px;
+}
+
+.logo {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+aside,
+body>header,
+main,
+.news-feed {
+    border: solid 4px #000;
+    padding: 10px;
+    margin: 10px;
+    font-family: monospace;
+}
+*/
+/* End Debugging Code */
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: hotpink;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.posts {
+    min-height: 300px;
+    border: solid 1px black;
+    margin-bottom: 50px;
+}
+
+.stories{
+    min-height: 100px;
+    border: solid 1px black;
+    margin-bottom: 50px;
+}
+
+.suggestions-panel {
+    position: fixed;
+    top: 100;
+    left: 65vw;
+    background-color: hotpink;
+    min-height: 80vh;
+    width: calc(35vw - 30px);
+}
+
+main {
+    width: calc(60vw - 30px);
+    margin-top: 22px;
+    margin-left: 5vw;
+}
+@media (max-width: 800px) {
+    .suggestions-panel {
+        display: none;
+    }
+
+    main {
+        width: auto;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
