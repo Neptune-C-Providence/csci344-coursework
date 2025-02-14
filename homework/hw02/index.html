@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>HW02 Starter Code</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="top-nav">
+        <h1 class="logo">Chase's Photo App</h1>
+        <nav class="nav-right">
+            <span class="username">WorldsSilliestGoose</span>
+            <button class="logout-btn">Log Out</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Right Panel-->
+        <aside class="suggestions-panel">
+            <header class="user-profile">
+                <img src="https://picsum.photos/50" alt="User's profile picture" class="profile-pic">
+                <div class="user-info">WorldsSilliestGoose</div>
+            </header>
+        
+            <section class="suggestions">
+                <h3>Suggestions for You</h3>
+                <!-- Suggested Account 1 -->
+                <div class="suggestion">
+                    <img src="https://picsum.photos/40" alt="Suggested user 1" class="profile-pic">
+                    <div class="suggestion-info">
+                        <span class="username">nerd1</span>
+                        <span class="suggested-text">Suggested for you</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <!-- Suggested Account 2 -->
+                <div class="suggestion">
+                    <img src="https://picsum.photos/41" alt="Suggested user 2" class="profile-pic">
+                    <div class="suggestion-info">
+                        <span class="username">nerd2</span>
+                        <span class="suggested-text">Suggested for you</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <!-- Suggested Account 3 -->
+                <div class="suggestion">
+                    <img src="https://picsum.photos/42" alt="Suggested user 3" class="profile-pic">
+                    <div class="suggestion-info">
+                        <span class="username">nerd3</span>
+                        <span class="suggested-text">Suggested for you</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <!-- Suggested Account 4 -->
+                <div class="suggestion">
+                    <img src="https://picsum.photos/43" alt="Suggested user 4" class="profile-pic">
+                    <div class="suggestion-info">
+                        <span class="username">nerd4</span>
+                        <span class="suggested-text">Suggested for you</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <!-- Suggested Account 5 -->
+                <div class="suggestion">
+                    <img src="https://picsum.photos/44" alt="Suggested user 5" class="profile-pic">
+                    <div class="suggestion-info">
+                        <span class="username">nerd5</span>
+                        <span class="suggested-text">Suggested for you</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </section>
+        </aside>
+        
+
+
+        <section class="news-feed">
+            <!-- Stories -->
+            <header class="stories">
+                <h3>Stories</h3>
+                <!-- Story 1 -->
+                <div class="story">
+                    <img src="https://picsum.photos/45" alt="Story user 1" class="profile-pic">
+                    <span class="user-info">BIGnerd1</span>
+                </div>
+                <!-- Story 2 -->
+                <div class="story">
+                    <img src="https://picsum.photos/46" alt="Story user 2" class="profile-pic">
+                    <span class="user-info">BIGnerd2</span>
+                </div>
+                <!-- Story 3 -->
+                <div class="story">
+                    <img src="https://picsum.photos/47" alt="Story user 3" class="profile-pic">
+                    <span class="user-info">BIGnerd3</span>
+                </div>
+                <!-- Story 4 -->
+                <div class="story">
+                    <img src="https://picsum.photos/48" alt="Story user 4" class="profile-pic">
+                    <span class="user-info">BIGnerd4</span>
+                </div>
+                <!-- Story 5 -->
+                <div class="story">
+                    <img src="https://picsum.photos/49" alt="Story user 5" class="profile-pic">
+                    <span class="user-info">BIGnerd5</span>
+                </div>
+            </header>
+            
+
+            <!-- Post 1-->
+            <section class="posts">
+                <header class="post-header">
+                    <img src="https://picsum.photos/45" alt="User profile picture" class="profile-pic">
+                    <span class="username">BIGnerd1</span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/600" alt="Post image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-comment"></i>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="likes">100 likes</div>
+                <div class="caption">
+                    <span class="username">BIGnerd1</span> This is a caption <a href="#">more</a>
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <span class="username">commenter1</span> Comment Here
+                    </div>
+                    <div class="comment">
+                        <span class="username">commenter2</span> Comment Here
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#">Post</a>
+                </div>
+            </section>
+
+            <!-- Post 2 -->
+            <section class="posts">
+                <header class="post-header">
+                    <img src="https://picsum.photos/46" alt="User profile picture" class="profile-pic">
+                    <span class="username">BIGnerd2</span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/601" alt="Post image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-comment"></i>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="likes">200 likes</div>
+                <div class="caption">
+                    <span class="username">BIGnerd2</span> Another caption <a href="#">more</a>
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <span class="username">commenter1</span> Comment Here
+                    </div>
+                    <div class="comment">
+                        <span class="username">commenter2</span> Comment Here
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#">Post</a>
+                </div>
+            </section>
+
+            <!-- Post 3 -->
+            <section class="posts">
+                <header class="post-header">
+                    <img src="https://picsum.photos/47" alt="User profile picture" class="profile-pic">
+                    <span class="username">BIGnerd3</span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/602" alt="Post image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-comment"></i>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="likes">300 likes</div>
+                <div class="caption">
+                    <span class="username">BIGnerd3</span> Yet another caption <a href="#">more</a>
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <span class="username">commenter1</span> Comment Here
+                    </div>
+                    <div class="comment">
+                        <span class="username">commenter2</span> Comment Here
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#">Post</a>
+                </div>
+            </section>
+
+            <!-- Post 4 -->
+            <section class="posts">
+                <header class="post-header">
+                    <img src="https://picsum.photos/48" alt="User profile picture" class="profile-pic">
+                    <span class="username">BIGnerd4</span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/603" alt="Post image" class="post-image">
+                <div class="post-icons">
+                    <div class="left-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-comment"></i>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="likes">400 likes</div>
+                <div class="caption">
+                    <span class="username">BIGnerd4</span> Final caption <a href="#">more</a>
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <span class="username">commenter1</span> Comment Here
+                    </div>
+                    <div class="comment">
+                        <span class="username">commenter2</span> Comment Here
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <a href="#">Post</a>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
