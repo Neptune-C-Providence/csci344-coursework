@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { getDataFromServer } from "../server-requests";
+import Post from "./Post";
 
 export default function Posts({ token }) {
     const [posts, setPosts] = useState([]);
-
     async function getPosts() {
-        const data = await getDataFromServer(token, "/api/posts");
+        const data = await getDataFromServer(token, "/api/posts/");
         console.log(data);
         setPosts(data);
     }
@@ -14,5 +14,11 @@ export default function Posts({ token }) {
         getPosts();
     }, []);
 
-    return <div>TODO: output all of the posts: {posts.length}</div>;
+    return (<div>
+        {
+            posts.map(post => (
+                <Post postData={post} token={token} key={post.id} />
+            ))
+        }
+    </div>);
 }

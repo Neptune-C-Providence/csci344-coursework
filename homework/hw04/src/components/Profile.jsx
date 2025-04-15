@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getDataFromServer } from "../server-requests";
 
 export default function Profile({ token }) {
+    const [userProfile, setUserProfile] = useState(null);
+
+    useEffect(() => {
+        async function fetchProfile() {
+            const data = await getDataFromServer(token, "/api/profile/");
+            console.log(data);
+            setUserProfile(data);
+        }
+        fetchProfile();
+    }, [token]);
+
+    if (!userProfile) return null;
+
     return (
-        <header className="flex gap-4 items-center">
-            <p>Profile Goes Here. Fetch data from /api/profile/ endpoint.</p>
-        </header>
+        <div className="flex items-center space-x-4 p-2">
+            <img
+                src={userProfile?.image_url}
+                alt={userProfile?.image_url}
+                className="w-16 h-16 rounded-full object-cover"
+            />
+            <div>
+                <h2 className="text-2xl font-Comfortaa font-semibold">
+                    {userProfile?.username}
+                </h2>
+            </div>
+        </div>
     );
 }
